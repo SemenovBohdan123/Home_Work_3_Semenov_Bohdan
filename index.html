@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Форма регістрації
+    </title>
+</head>
+<body>
+    <h1>Урок "Формы": теги и атрибуты.</h1>
+    <h2>Раскажите немного о себе...</h2>
+    <P> Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут
+         ивымышленые.
+    </P>
+    <h3>Коротко о себе</h3>
+    <div>
+        <form action="#">
+            <input type="text" name="name" placeholder="Имя"></br>
+            <input type="text" placeholder="Фамилия"></br>
+            <p>Пол:</p><input type="radio" name="pol" value="men">мужской
+            <input type="radio" name="pol" value="women">женский</br>
+            <p>Возраст:</p><input type="text"><p>лет</p>
+        </form>
+    </div>
+    <div>
+        <h3>Подробнее о себе</h3>
+            <input type="radio" name="pol_tochno" value="yong_man">Молодой человек</br>
+            <input type="radio" name="pol_tochno" value="girl">Девушка</br>
+            <input type="text" placeholder="Дата рождения"></br>
+            <input type="text" placeholder="Семейное положение"></br>
+            <input type="text" placeholder="Социальный статус"></br>
+            <input type="text" placeholder="Местожительство"></br>
+            <h3>Что вы обычно делаете на выходных:</h3>
+            <input type="checkbox" name="weekend" value="sleep">Cплю</br>
+            <input type="checkbox" name="weekend" value="friends">Гуляю с друзями</br>
+            <input type="checkbox" name="weekend" value="fish">Хожу на рыбалку</br>
+            <input type="checkbox" name="weekend" value="game">Играю в игры</br>
+            <h3>Росказать о формах в книге, по HTML:</h3>
+            <select>
+                <option>Site frequency:</option>
+                <option value="#"></option>
+                <option value="#"></option>
+            </select>
+            <h3>Сколько книг вы прочитали за всю свою жизнь:</h3>
+            <input type="radio" name="books">0-10</br>
+            <input type="radio" name="books">11-20</br>
+            <input type="radio" name="books">21-50</br>
+            <input type="radio" name="books">50+</br>
+            <h3>Вашм коментарии:</h3>
+            <textarea name="coments" id="#" cols="30" rows="10"></textarea></br>
+            <select size="3px" multiple name="position">
+                <option value="one_position">Первая позиция</option>
+                <option value="two_position">Вторая позиция</option>
+                <option value="three_position">Третья позиция</option>
+           </select>
+           <h3>И в заключении</h3>
+           <input type="text" size="25px" placeholder="Это поле было введено до вас"></br>
+           <input type="email" size="25px" placeholder="Email"></br>
+           <h3>Хотите подписаться на самую модную рассылку спама?</h3>
+           <p>Выберете категории</p>
+           <input type="checkbox" name="spam">Оборудование</br>
+           <input type="checkbox" name="spam">Как приготовить обеды</br>
+           <input type="checkbox" name="spam">Заработай милион за два дня!</br>
+           <h3>На сколько сложная задача:</h3>
+           <input type="radio" name="levl">Совсем нет</br>
+           <input type="radio" name="levl">Так себе</br>
+           <input type="radio" name="levl">Еле справился</br>
+           <input type="submit" value="Отправить">
+        </form>
+    </div>
+</body>
+</html>
